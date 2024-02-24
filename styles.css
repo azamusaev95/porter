@@ -1,0 +1,716 @@
+/* fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap");
+/* a */
+body {
+  font-family: "Golos Text", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: #363636;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none; /* Убирает подчеркивание */
+  color: inherit; /* Наследует цвет текста от родительского элемента */
+  /* Дополнительные свойства, которые могут влиять на визуальный стиль ссылок */
+  font-weight: inherit;
+  background-color: transparent;
+}
+
+/* header */
+header {
+  width: 100%;
+  background-color: white;
+}
+
+.header-shadow {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  transition: transform 0.5s ease-in-out;
+  z-index: 100;
+}
+header .content {
+  margin: auto;
+  display: flex;
+  max-width: 1200px;
+  justify-content: space-between;
+  height: 75px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+}
+
+nav {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.imgContent img {
+  width: 466px;
+  height: 348px;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  color: #676767;
+}
+
+nav ul li:hover {
+  text-decoration: underline;
+  color: #0c54a0;
+}
+
+.numberPhone {
+  display: inline-block;
+  color: #676767;
+  font-size: 18px;
+  padding-top: 11px;
+  margin: 0px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.numberPhone:hover {
+  color: #007aff;
+}
+
+button {
+  color: #fff;
+  background-color: #007aff;
+  border: 1px solid #007aff;
+  padding: 12px 22px;
+  border-radius: 3px;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0c58a9;
+  border: 1px solid #0c58a9;
+  color: #fff;
+}
+
+.logo img {
+  width: 180px;
+  height: 50px;
+  cursor: pointer;
+}
+
+/* banner  */
+
+.banner {
+  background-image: url("./Assets/Image/mainPhoto.webp");
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner .content {
+  padding-top: 50px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h1 {
+  width: 700px;
+  font-size: 36px;
+  line-height: 43px;
+  font-weight: 500;
+  color: #000;
+}
+
+.aboutUs {
+  max-width: 1200px;
+  margin: auto;
+}
+.aboutUs .content {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  text-align: left;
+  font-size: 18px;
+  width: 100%;
+  box-sizing: border-box;
+}
+h2 {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.aboutUs li::before {
+  content: "✔"; /* Задаем символ "птичка" */
+  margin-right: 0.5em; /* Добавляем немного отступа от текста */
+  color: #007aff;
+}
+
+li {
+  list-style: none;
+}
+
+.textContent {
+  width: 50%;
+}
+
+/* advantage */
+
+.advantages {
+  max-width: 1200px;
+  margin: auto;
+}
+.advantages .content {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.advantage-card {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.5s ease-in-out;
+  box-sizing: border-box;
+}
+
+.advantage-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #007aff;
+}
+
+.advantage-card h3 {
+  color: #333;
+}
+
+.advantage-card p {
+  color: #666;
+}
+
+.advantages .icon {
+  width: 55px;
+  height: 55px;
+}
+
+.service {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.service p {
+  text-align: center;
+}
+
+.serviceContent {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.service-card {
+  text-align: center;
+  width: 250px;
+  height: 300px;
+  margin: 15px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #007aff;
+}
+
+.service-card img {
+  max-width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  color: #333;
+  margin: 0px;
+  padding: 15px;
+}
+
+.service-card:hover {
+  background-color: #f8f8f8;
+}
+
+h2,
+h3 {
+  font-weight: 500;
+}
+
+.carPark {
+  max-width: 1200px;
+  margin: auto;
+}
+.carPark .content {
+  padding-top: 20px;
+}
+
+.titleCarPark {
+  text-align: center;
+}
+
+.carCard {
+  width: 90%;
+  height: 292px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 40px 15px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 4px 25px 5px rgba(0, 0, 0, 0.07);
+  margin: auto;
+  margin-top: 37px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carCard:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px #007aff;
+}
+
+.carButtonBox {
+  width: 25%;
+}
+.carText {
+  width: 35%;
+}
+
+.carText p {
+  font-size: 13px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.carText h3 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.carButtonText {
+  padding-top: 10px;
+}
+.carButtonBox p {
+  margin: 0px;
+  margin-top: 7px;
+  color: #686868;
+  font-size: 14px;
+}
+
+.carButtonBox button {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.review {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.review p {
+  text-align: center;
+}
+
+.review .content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.review-card {
+  text-align: center;
+  width: 300px;
+  margin: 15px;
+  padding: 15px;
+  border: 2px solid #ddd;
+  border-radius: 15px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.review-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #007aff;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+.review-text {
+  color: #333;
+  font-style: italic;
+}
+
+.odd {
+  background-color: #f8f8f8;
+}
+
+.even {
+  background-color: #e6e6e6;
+}
+
+.icon {
+  width: 35px;
+  height: 35px;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+}
+
+.stars img {
+  width: 20px;
+  height: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.content {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.buttonGo {
+  text-transform: uppercase;
+}
+
+.fixedContact {
+  position: fixed;
+  top: 80%;
+  left: 95%;
+}
+
+.whatsappFixed {
+  width: 56px;
+  height: 56px;
+  background-color: #25d366;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.whatsappFixed img {
+  width: 35px;
+  height: 35px;
+}
+
+.telegramFixed {
+  width: 56px;
+  height: 56px;
+  background-color: #337ab7;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.telegramFixed img {
+  width: 25px;
+  height: 25px;
+}
+
+.burgerMenu {
+  width: 44px;
+  height: 44px;
+  margin-left: 15px;
+  display: none;
+  cursor: pointer;
+}
+
+.burgerMenu img {
+  width: 44px;
+  height: 44px;
+}
+
+.buttonBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 1200px) {
+  h1 {
+    margin-left: 50px;
+  }
+  .buttonGo {
+    margin-left: 50px;
+  }
+
+  .aboutUs .content {
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    flex-direction: column-reverse;
+    padding: 0px;
+  }
+
+  .textContent {
+    width: 80%;
+  }
+
+  .advantages .content {
+    display: flex;
+    justify-content: center;
+
+    margin: 20px;
+    flex-wrap: wrap;
+  }
+
+  .content .review-card {
+    margin: auto;
+    margin-top: 10px;
+    height: 280px;
+  }
+
+  .titleCarPark {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .serviceContent {
+    justify-content: center;
+  }
+
+  .review .content {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .fixedContact {
+    left: 90%;
+    padding-right: 1%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  nav {
+    display: none;
+  }
+  .banner {
+    background-position: center;
+  }
+
+  .burgerMenu {
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 850px) {
+  .carImg img {
+    width: 190px;
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  h1 {
+    font-size: 26px;
+    width: 420px;
+  }
+  h1 {
+    margin-left: 30px;
+  }
+  .buttonGo {
+    margin-left: 30px;
+  }
+
+  .aboutUs .content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .textContent {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+
+  .carImg img {
+    width: 190px;
+    height: 120px;
+  }
+
+  .carText {
+    position: absolute;
+    width: 90%;
+    top: 160px;
+  }
+  .carText h3 {
+    font-size: 16px;
+  }
+  .carButtonText {
+    padding-top: 0px;
+    font-size: 12px;
+  }
+
+  .carButtonText p {
+    margin-top: 0px;
+    font-size: 12px;
+  }
+
+  .carText h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .carButtonBox button {
+    display: none;
+  }
+  .carCard {
+    justify-content: space-around;
+    position: relative;
+    padding: 15px 15px;
+  }
+
+  .imgContent {
+    display: flex;
+    justify-content: center;
+  }
+  .fixedContact {
+    left: 87%;
+    padding-right: 3%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .fixedContact {
+    left: 80%;
+  }
+  h1 {
+    margin-left: 25px;
+    max-width: 350px;
+  }
+  .buttonGo {
+    margin-left: 25px;
+  }
+  .imgContent img {
+    width: 348px;
+    height: 261px;
+  }
+}
+@media screen and (max-width: 450px) {
+  h1 {
+    margin-left: 15px;
+    max-width: 300px;
+    font-size: 20px;
+  }
+  .buttonGo {
+    margin-left: 15px;
+  }
+  .buttonBox button {
+    display: none;
+  }
+  .carCard {
+    flex-direction: column;
+    height: auto;
+  }
+  .carCard .carText {
+    position: static;
+    margin: auto;
+  }
+  .carCard .carButtonText {
+    display: none;
+  }
+  .carImg {
+    display: flex;
+    justify-content: center;
+  }
+
+  .review-card {
+    width: 80%;
+  }
+
+  .review-card p {
+    font-size: 13px;
+  }
+  .review-text {
+    font-size: 12px;
+  }
+  footer .content {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  footer .content p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .fixedContact {
+    left: 70%;
+  }
+}
+
+/* ////////////////////// */
+
+/* Стили для мобильного меню */
+nav.mobile-nav {
+  display: none;
+  position: absolute;
+  top: 70px; /* Расположение меню относительно верха страницы */
+  left: 0;
+  width: 100%;
+  background-color: rgba(51, 51, 51, 0.9);
+  z-index: 1; /* Поднимаем меню над остальными элементами страницы */
+}
+
+nav.mobile-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+nav.mobile-nav li {
+  margin: 10px 0;
+}
+
+nav.mobile-nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Добавляем стили для активной ссылки (по вашему выбору) */
+nav.mobile-nav a:hover {
+  color: #797fd2;
+}
+.close-button {
+  display: flex;
+  justify-content: flex-end;
+}
+.close-button span {
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+  margin-right: 15px;
+}

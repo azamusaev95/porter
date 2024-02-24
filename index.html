@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div>
+      <header id="myHeader" >
+        <div class="content">
+          <div class="logo">
+            <a href="#banner" onclick="scrollToElement('banner')">
+              <img src="./Assets/Image/logo (3).png" alt="logo"  />
+            </a>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#aboutUs">О нас</a></li>
+              <li><a href="#service">Услуги</a></li>
+              <li><a href="#advantages">Преимущества</a></li>
+              <li><a href="#review">Отзывы</a></li>
+              <li><a href="#carPark">Автопарк</a></li>
+            </ul>
+          </nav>
+          <nav class="mobile-nav" id="mobileNav">
+            <div class="close-button"><span  id="closeButton">&times;</span></div>
+            <ul>
+              <li><a href="#aboutUs">О нас</a></li>
+              <li><a href="#service">Услуги</a></li>
+              <li><a href="#advantages">Преимущества</a></li>
+              <li><a href="#review">Отзывы</a></li>
+              <li><a href="#carPark">Автопарк</a></li>
+            </ul>
+          </nav>
+          <div class="buttonBox">
+            <!-- <p class="numberPhone">996 550 956 566</p> -->
+          <a id="whatsappGo" href="">
+            <button  id="whatsappGo">Заказать</button></a>
+            <div class="burgerMenu" >
+              <img id="burgerButton" src="./Assets/Icons/burger.svg" alt="burger">
+            </div>
+          </div>
+          
+        </div>
+      </header>
+      <main>
+        <section class="banner" id="banner">
+          <div class="content">
+            <h1>
+              Портер Такси Бишкек, грузоперевозки внутри города и по всему
+              Кыргызстану
+            </h1>
+            <a href="" id="whatsappGo">
+              <button class="buttonGo">Поехали!</button>
+            </a>
+          </div>
+        </section>
+        <section class="service" id="service" onclick="scrollToElement('service')">
+          <h2>Наши услуги</h2>
+          <p>Мы предоставляем широкий спектр услуг по грузоперевозкам, включая переезды квартир, офисов, доставку товаров, вывоз мусора и многое другое.</p>
+          <div class="serviceContent">
+            <div class="service-card">
+              <img
+              src="./Assets/Image/cardImg4.jpg"
+              alt="Выгрузка и вывоз строительного мусора"
+              />
+              <p>Выгрузка и вывоз строительного мусора</p>
+            </div>
+            <div class="service-card">
+              <img
+              src="./Assets/Image/cardImg3.jpg"
+              alt="Услуги грузчиков"
+              />
+              <p>Услуги грузчиков: Эффективная погрузка, разгрузка и переноска.</p>
+            </div>
+           
+    
+            <div class="service-card">
+              <img src="./Assets/Image/cardImg1.jpg" alt="Комплексный переезд квартир и офисов" />
+              <p>Комплексный переезд квартир и офисов</p>
+            </div>
+            <div class="service-card">
+              <img
+                src="./Assets/Image/cardImg2.jpg"
+                alt="Грузоперевозки в пределах Кыргызстана"
+              />
+              <p>Грузоперевозки в пределах Кыргызстана от 1 кг до 20 тонн</p>
+            </div>
+          </div>
+        </section>
+        <section class="aboutUs" id="aboutUs" onclick="scrollToElement('aboutUs')">
+          <h2>О нас</h2>
+          <div class="content">
+            <div class="imgContent">
+              <img src="./Assets/Image/Screenshot 2024-02-22 172807.png" alt="logoStonee" />
+            </div>
+            <div class="textContent">
+              <p class="startText">
+                Добро пожаловать в
+                <span class="bold">«Портер Такси Бишкек»</span> – вашем надежном
+                партнере в грузоперевозках! Наша транспортная компания
+                специализируется в выполнении разнообразных грузоперевозок по
+                самым выгодным тарифам в Бишкеке и за его пределами.
+              </p>
+
+              <h3>Наши услуги включают в себя:</h3>
+              <ul>
+                <li>
+                  Грузоперевозки в пределах Кыргызстана от 1 кг до 20 тонн
+                </li>
+                <li>Оптимизированная транспортная логистика</li>
+                <li>Эффективная перевозка сборных грузов внутри Кыргызстана</li>
+                <li>Выгрузка и вывоз строительного мусора</li>
+                <li>Комплексный переезд квартир и офисов</li>
+              </ul>
+              <p>
+                Выбирайте «Портер Такси Бишкек» для быстрых, качественных и
+                экономичных грузоперевозок. Мы готовы обеспечить надежную
+                доставку вашего груза!
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="advantages" id="advantages" onclick="scrollToElement('advantages')">
+          <h2>Наши преимущество</h2>
+          <div class="content">
+            <div class="advantage-card">
+              <h3>Безопасность и комфорт</h3>
+              <p>
+                  <p>
+                      <img class="icon" src="./Assets/Icons/shield-solid.svg" alt="">
+                  </p>
+                Ваша безопасность и комфорт - наш главный приоритет. Мы тщательно
+                упакуем и осторожно доставим ваши ценные вещи.
+              </p>
+            </div>
+      
+            <div class="advantage-card">
+              <h3>Быстрая доставка</h3>
+              <p>
+                  <p>
+                      <img class="icon" src="./Assets/Icons/truck-fast-solid.svg" alt="">
+                  </p>
+                С Портером доставка занимает всего 30 минут, без опозданий. Мы ценим
+                ваше время и гарантируем оперативность.
+              </p>
+            </div>
+      
+            <div class="advantage-card">
+              <h3>Фиксированные цены</h3>
+              <p>
+                  <p>
+                      <img class="icon" src="./Assets/Icons/hand-holding-dollar-solid.svg" alt="" />
+                  </p>
+                Мы предлагаем честные и фиксированные цены, без скрытых дополнительных
+                платежей. Уверенность в стоимости наших услуг - это наше обещание вам.
+              </p>
+            </div>
+      
+            <div class="advantage-card">
+              <h3>Соблюдение правил</h3>
+              <p>
+                  <p>
+                      <img class="icon" src="./Assets/Icons/traffic-light-solid.svg" alt="" />
+                  </p>
+                Соблюдение правил дорожного движения и этикета - неотъемлемая часть
+                нашей профессиональной работы. Мы заботимся о вашей безопасности и
+                создаем приятный опыт сотрудничества.
+              </p>
+            </div>
+          </div>
+        </section>
+       
+        <section class="carPark" id="carPark" onclick="scrollToElement('carPark')">
+          <h2>Наш парк</h2>
+          <p class="titleCarPark">Мы располагаем целым парком грузовиков, готовых к перевозке грузов от 1 тонны до 20 тонн. Разработанные нами выгодные тарифы позволяют вам экономить, при этом заказывая услуги «Портер Такси» для перевозки мебели, техники, вещей, строительных материалов, а также для транспортировки крупногабаритных и тяжелых грузов.</p>
+          <div class="content">
+            <div class="carCard">
+              <div class="carImg">
+                <img src="./Assets/Image/autoparkdemo.webp" alt="autopark">
+              </div>
+              <div class="carText">
+                <h3>Грузоподъемность – 700 кг</h3>
+                <p>Шустрая и маневренная машина, которая быстро доставит ваш груз даже в час
+                  пик. В основном используется для перевозки небольших грузов: личные вещи в коробках, бытовая
+                  техника, строительные материалы</p>
+              </div>
+              <div class="carButtonBox">
+                <a  id="whatsappGo">
+                  <button >Заказать</button>
+                </a>
+                <div class="carButtonText">
+                  <p>Длина: 1–1,2 м</p>
+                  <p>Ширина: 1 м</p>
+                  <p>Высота: 1–1,2 м</p>
+                  <p>Вместительность европалет: 0–1 шт.</p>
+                  <p>Объём: 1–1,5 м3</p>
+                </div>
+              </div>
+            </div>
+            <div class="carCard">
+              <div class="carImg">
+                <img src="./Assets/Image/autoparkdemo.webp" alt="autopark">
+              </div>
+              <div class="carText">
+                <h3>Грузоподъемность – 700 кг</h3>
+                <p>Шустрая и маневренная машина, которая быстро доставит ваш груз даже в час
+                  пик. В основном используется для перевозки небольших грузов: личные вещи в коробках, бытовая
+                  техника, строительные материалы</p>
+              </div>
+              <div id="whatsappGo" class="carButtonBox">
+                <a id="whatsappGo">
+                  <button>Заказать</button>
+                </a>
+                <div class="carButtonText">
+                  <p>Длина: 1–1,2 м</p>
+                  <p>Ширина: 1 м</p>
+                  <p>Высота: 1–1,2 м</p>
+                  <p>Вместительность европалет: 0–1 шт.</p>
+                  <p>Объём: 1–1,5 м3</p>
+                </div>
+              </div>
+            </div>
+            <div class="carCard">
+              <div class="carImg">
+                <img src="./Assets/Image/autoparkdemo.webp" alt="autopark">
+              </div>
+              <div class="carText">
+                <h3>Грузоподъемность – 700 кг</h3>
+                <p>Шустрая и маневренная машина, которая быстро доставит ваш груз даже в час
+                  пик. В основном используется для перевозки небольших грузов: личные вещи в коробках, бытовая
+                  техника, строительные материалы</p>
+              </div>
+              <div class="carButtonBox">
+                <a id="whatsappGo" href="">
+                  <button>Заказать</button>
+                </a>
+                <div class="carButtonText">
+                  <p>Длина: 1–1,2 м</p>
+                  <p>Ширина: 1 м</p>
+                  <p>Высота: 1–1,2 м</p>
+                  <p>Вместительность европалет: 0–1 шт.</p>
+                  <p>Объём: 1–1,5 м3</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="review" id="review" onclick="scrollToElement('review')" >
+          <h2>Отзывы</h2>
+          <p>
+            Отзывы наших клиентов — это истории успеха. Мы гордимся тем, что помогаем
+            всем.
+          </p>
+          <div class="content">
+            <div class="review-card">
+              <img src="./Assets/Image/customer1.jpg" alt="Фото клиента 1" class="avatar" />
+              <p>Айжан Раззыкова</p>
+              <div class="stars">
+               <img src="./Assets/Icons/star-solid.svg" alt="star">
+              <img src="./Assets/Icons/star-solid.svg" alt="star">
+              <img src="./Assets/Icons/star-solid.svg" alt="star">
+              <img src="./Assets/Icons/star-solid.svg" alt="star">
+              <img src="./Assets/Icons/star-solid.svg" alt="star">
+              </div>
+              <p class="review-text">
+                "Быстро, аккуратно, недорого! Очень доволен услугами компании."
+              </p>
+            </div>
+            <div class="review-card">
+              <img src="./Assets/Image/customer2.jpg" alt="Фото клиента 3" class="avatar" />
+              <p>Самат Мусаев</p>
+              <div class="stars">
+                <img src="./Assets/Icons/star-solid.svg" alt="star">
+               <img src="./Assets/Icons/star-solid.svg" alt="star">
+               <img src="./Assets/Icons/star-solid.svg" alt="star">
+               <img src="./Assets/Icons/star-solid.svg" alt="star">
+               <img src="./Assets/Icons/star-solid.svg" alt="star">
+               </div>
+              <p class="review-text">
+                "Отличный сервис! Грузоперевозка была быстрой и без проблем.
+                Рекомендую!"
+              </p>
+            </div>
+            <div class="review-card">
+                <img src="./Assets/Image/customer3.jpg" alt="Фото клиента 2" class="avatar" />
+                <p>Анара Сатыбалдиева</p>
+                <div class="stars">
+                    <img src="./Assets/Icons/star-solid.svg" alt="star">
+                   <img src="./Assets/Icons/star-solid.svg" alt="star">
+                   <img src="./Assets/Icons/star-solid.svg" alt="star">
+                   <img src="./Assets/Icons/star-solid.svg" alt="star">
+                   <img src="./Assets/Icons/star-solid.svg" alt="star">
+                   </div>
+                <p class="review-text">
+                  "Переезд прошел гладко, спасибо за профессионализм!"
+                </p>
+              </div>
+          </div>
+
+        </section>
+      </main>
+      <footer>
+        <div class="content"> 
+      <p>&copy; 2024 Портер такси Бишкек Грузоперевозки внутри города. Все права защищены.</p>
+        </div>
+      </footer>
+    </div>
+    <div class="fixedContact">
+      <div class="whatsappFixed">
+        <a id="whatsappGo" href="">
+          <img  src="./Assets/Icons/fixedWhat.svg" alt="whatsappFixed">
+        </a>
+      </div>
+      <div class="telegramFixed">
+        <a href="" id="telGo">
+          <img  src="./Assets/Icons/fixedPhone.svg" alt="phoneFixed">
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
