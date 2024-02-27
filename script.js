@@ -30,11 +30,26 @@ const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
 
 console.log(randomNumber);
 
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof url != "undefined") {
+      window.location = url;
+    }
+  };
+  gtag("event", "conversion", {
+    send_to: "AW-11459218209/r90_CIrxxpYZEKGWl9gq",
+    event_callback: callback,
+  });
+  return false;
+}
 const localStorageNumber = () => {
   const number = randomNumber % 2 === 0 ? NUMBER_1 : NUMBER_2;
   telLink.href = `tel:${number}`;
   linkTag.forEach((el) => {
-    el.href = `https://wa.me/${number}`;
+    el.href = `#`;
+    el.onclick = () => {
+      gtag_report_conversion(`https://wa.me/${number}`);
+    };
   });
 };
 
