@@ -21,7 +21,7 @@ const linkTags = document.querySelectorAll("whatsappGo");
 const telLink = document.getElementById("telGo");
 
 const NUMBER_1 = "996500441844";
-const NUMBER_2 = "996703660044";
+const NUMBER_2 = "996500441844";
 const linkTag = document.querySelectorAll("#whatsappGo");
 
 const min = 1;
